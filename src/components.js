@@ -38,7 +38,6 @@ function KeyButton (props) {
 
 
 export { 
-	Partition, 
 	Digits, 
 	Operators 
 }
