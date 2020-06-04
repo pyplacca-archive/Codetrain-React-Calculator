@@ -1,17 +1,13 @@
 import React from 'react';
 import './App.css';
-import { 
-  Digits, 
-  Operators, 
-  Partition 
-} from  './components'
+import { Digits, Operators } from  './components'
 
 
 function App() {
   return (
     <div className='App'>
     
-      <Partition id='display' />
+      <div id='display'></div>
 
       <main>
         <Digits />
