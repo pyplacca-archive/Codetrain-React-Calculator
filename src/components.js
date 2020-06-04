@@ -2,10 +2,13 @@ import React from 'react'
 
 class Digits extends React.Component {
 	render () {
+		const children = [
+			'AC', 'Del', '%', '7', '8', '9', '4', '5', '6', '1', '2', '3', '0', '.'
+		]
 		return (
 			<div className='digits'>
 	         	{
-		            ['AC', 'Del', '%', '7', '8', '9', '4', '5', '6', '1', '2', '3', '0', '.']
+		            children
 		            .map((t, i) => <KeyButton text={t} key={i} />)
 	          	}
 	        </div>
@@ -15,10 +18,11 @@ class Digits extends React.Component {
 
 class Operators extends React.Component {
 	render () {
+		const children = ['/', '*', '-', '+', '=']
 		return (
 			<div className='operators'>
 				{
-		            ['/', '*', '-', '+', '=']
+		            children
 		            .map((op, i) => <KeyButton text={op} key={i} />)
 	          	}
 	        </div>
