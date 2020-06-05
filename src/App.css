@@ -24,6 +24,27 @@
   background-color: #58b4ae;
 }
 
+.App #display h1 {
+  text-align: right;
+  font-size: 6em;
+  color: #fff;
+  padding: 6px 15px;
+  overflow-x: auto;
+  outline: none;
+}
+
+.App #display h1::-webkit-scrollbar {
+  background-color: #ebebeb;
+  height: 6px;
+  border-radius: 3px;
+  padding: 4px 0;
+}
+
+.App #display h1::-webkit-scrollbar-thumb {
+  background-color: #c4c4c4;
+  border-radius: 3px;
+}
+
 .App main {
   -ms-grid-columns: 3fr 1fr;
       grid-template-columns: 3fr 1fr;
