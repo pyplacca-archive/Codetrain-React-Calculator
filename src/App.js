@@ -22,7 +22,7 @@ function App() {
     <div className='App'>
     
       <div id='display'>
-        <h1 contenteditable="true">0</h1>
+        <h1>0</h1>
       </div>
 
       <main>

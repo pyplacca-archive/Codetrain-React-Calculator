@@ -26,11 +26,12 @@
 
 .App #display h1 {
   text-align: right;
-  font-size: 6em;
+  font-size: 6rem;
   color: #fff;
   padding: 6px 15px;
   overflow-x: auto;
   outline: none;
+  white-space: nowrap;
 }
 
 .App #display h1::-webkit-scrollbar {

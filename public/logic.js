@@ -3,11 +3,11 @@ let reset = false;
 
 ['.digits', '.operators'].forEach(
     selector => Array(...document.querySelector(selector).children).forEach(
-        arg => arg.onclick = () => {
-            if ('0123456789+-/*.'.includes(arg.innerText)) {
+        arg => arg.onclick = function () {
+            if ('0123456789+-/*.'.includes(this.innerText)) {
                 display.innerText = (
                     display.innerText === '0' || (reset && (!'+/-*'.includes(arg.innerText)))
-                ) ? arg.innerText : display.innerText + arg.innerText
+                ) ? this.innerText : display.innerText + this.innerText
             }; 
             reset = false
         }

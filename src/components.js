@@ -9,8 +9,8 @@ function KeyGroup({cls, children}) {
          	{
 	            children
 	            .map((t, i) => {
-	            	const [t, id] = t.split(' ');
-	            	return <KeyButton id={id || ''} text={t} key={i} />
+	            	const [txt, id] = t.split(' ');
+	            	return <KeyButton id={id || ''} text={txt} key={i} />
 	            })
           	}
         </div>
