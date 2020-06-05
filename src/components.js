@@ -1,6 +1,6 @@
 import React from 'react'
 
-const KeyButton = ({text}) => <p>{text}</p>
+const KeyButton = ({text, id}) => <p id={id}>{text}</p>
 
 function KeyGroup({cls, children}) {
 	
@@ -8,7 +8,10 @@ function KeyGroup({cls, children}) {
 		<div className={cls}>
          	{
 	            children
-	            .map((t, i) => <KeyButton text={t} key={i} />)
+	            .map((t, i) => {
+	            	const [t, id] = t.split(' ');
+	            	return <KeyButton id={id || ''} text={t} key={i} />
+	            })
           	}
         </div>
 	)		
