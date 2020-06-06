@@ -1,4 +1,4 @@
-const display = document.getElementById('display').firstElementChild;
+const display = document.getElementById('display');
 let reset = false;
 
 ['.digits', '.operators'].forEach(

@@ -20,19 +20,16 @@ const groups = [
 function App() {
   return (
     <div className='App'>
-    
-      <div id='display'>
-        <h1>0</h1>
-      </div>
+    	<div id='display'>0</div>
 
-      <main>
-        {
-        	groups.map(
-        		({master, sub}, i) => 
-        		<KeyGroup cls={master} children={sub} key={i} />
-        	)
-        }
-      </main>
+      	<main>
+	        {
+	        	groups.map(
+	        		({master, sub}, i) => 
+	        		<KeyGroup cls={master} children={sub} key={i} />
+	        	)
+	        }
+      	</main>
 
     </div>
   );
